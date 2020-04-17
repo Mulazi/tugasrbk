@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">     
+	
+	 
+
+<h:head>
+<title>Teknik Komputer Undip</title>
+<link href="./css/styles.css" rel="stylesheet" type="text/css"/>
+</h:head>
+
+<h:body>
+<div align="center">
+<fieldset>
+  <h:form>
+  <h1 class="title">Teknik Komputer Undip</h1><br/>
+      <legend>Form Mahasiswa Tekkom Angkatan 2017</legend>
+        <table>
+      <tr>
+        <td>Nama Depan:</td>
+        <td>
+          <h:inputText label="Nama Depan" 
+                       id="NamaDepan" value="#{employeeBean.namaDepan}" 
+                       required="true"/>
+                         <h:message for="NamaDepan" style="color: red"/>
+        </td>
+      </tr>
+
+       <tr>
+        <td>Nama Belakang:</td>
+        <td>
+          <h:inputText label="Nama Belakang" 
+                       id="NamaBelakang" value="#{employeeBean.namaBelakang}" 
+                       required="true"/>
+                      <h:message for="NamaBelakang" style="color: red"/>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>Alamat Kos:</td>
+        <td>
+          <h:inputText label="Alamat Kos"
+                       id="address" value="#{employeeBean.address}"
+                       required="true"/>
+          <h:message for="address" style="color: red"/>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>Asal:</td>
+        <td>
+          <h:inputText label="Asal" 
+                       id="Kota" value="#{employeeBean.kota}" 
+                       required="true"/>
+                       <h:message for="Kota" style="color: red"/>
+        </td>
+      </tr>
+      
+      
+            <tr>
+        <td>No Telepon:</td>
+        <td>
+          <h:inputText label="No Telepon"
+                       id="mobileno" value="#{employeeBean.mobileNumber}" required="true">
+          </h:inputText>
+          <h:message for="mobileno" style="color: red"/>
+        </td>
+      </tr>
+      
+            <tr>
+        <td>Email :</td>
+        <td>
+          <h:inputText label="Email"
+                       id="email" value="#{employeeBean.emailAddress}" required="true"
+                       validator="#{employeeBean.validateEmail}"/>
+          <h:message for="email" style="color: red"/>
+        </td>
+      </tr>
+      
+    </table>
+
+    <h:commandButton value="Confirm" action="confirm" />
+  </h:form>
+  </fieldset>
+  </div>
+</h:body>
+</html>
+
+
+
+

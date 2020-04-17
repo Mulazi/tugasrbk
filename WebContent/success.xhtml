@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+  <title>Formulir Suver Siswa</title>
+  <link href="./css/styles.css" rel="stylesheet" type="text/css"/>
+</h:head>
+<h:body>
+<div align="center">
+<fieldset>
+		 <h2 style="color:red">Data Berhasil Disimpan</h2>
+		 <h1 class="title">Form Mahasiswa Tekkom 2017</h1><br/>
+  
+		<table>
+			<tr>
+				<td>Nama Depan:</td>
+				<td><h:outputText value="#{employeeBean.namaDepan}" /></td>
+			</tr>
+			<tr>
+				   <td>Nama Belakang:</td>
+				<td><h:outputText value="#{employeeBean.namaBelakang}" /></td>
+			</tr>
+			<tr>
+				 <td>Alamat Kos:</td>
+				<td><h:outputText value="#{employeeBean.address}" /></td>
+			</tr>
+			<tr>
+				 <td>Asal:</td>
+				<td><h:outputText value="#{employeeBean.kota}" /></td>
+			</tr>
+			<tr>
+				<td>No Telepon:</td>
+				<td><h:outputText value="#{employeeBean.mobileNumber}" /></td>
+			</tr>
+			<tr>
+				<td>Email Address:</td>
+				<td><h:outputText value="#{employeeBean.emailAddress}" /></td>
+			</tr>
+			
+
+			<tr>
+			</tr>
+		</table>
+		</fieldset>
+		</div>
+	</h:body>
+</html>
